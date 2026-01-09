@@ -1,4 +1,4 @@
-name := 'cosmic-edit'
+name := 'armyknife-edit'
 export APPID := 'com.system76.CosmicEdit'
 
 rootdir := ''

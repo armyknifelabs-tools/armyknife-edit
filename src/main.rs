@@ -890,7 +890,7 @@ impl App {
             None => "No Open File".to_string(),
         };
 
-        let window_title = format!("{title} - {}", fl!("cosmic-text-editor"));
+        let window_title = format!("{title} - {}", fl!("armyknife-text-editor"));
         Task::batch([
             if let Some(window_id) = self.core.main_window_id() {
                 self.set_window_title(window_title, window_id)
@@ -1381,7 +1381,7 @@ impl Application for App {
     type Message = Message;
 
     /// The unique application ID to supply to the window manager.
-    const APP_ID: &'static str = "com.system76.CosmicEdit";
+    const APP_ID: &'static str = "dev.armyknifeEdit";
 
     fn core(&self) -> &Core {
         &self.core
@@ -1447,7 +1447,7 @@ impl Application for App {
         }
 
         let about = About::default()
-            .name(fl!("cosmic-text-editor"))
+            .name(fl!("armyknife-text-editor"))
             .icon(icon::from_name(Self::APP_ID))
             .version(env!("CARGO_PKG_VERSION"))
             .author("System76")

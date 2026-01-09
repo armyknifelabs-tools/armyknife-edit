@@ -715,7 +715,7 @@ where
                             });
                         }
                         _ => {
-                            log::error!("cosmic-text buffer not an Arc");
+                            log::error!("armyknife-text buffer not an Arc");
                         }
                     }
                 })
